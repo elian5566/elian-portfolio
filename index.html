@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elian Al‑Kadar Portfolio</title>
+  <!-- Tailwind CSS via CDN for quick setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom background and glass effect */
+    body {
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(56,189,248,.12), transparent 55%),
+        radial-gradient(1000px 600px at 80% 30%, rgba(167,139,250,.12), transparent 55%),
+        radial-gradient(900px 600px at 55% 90%, rgba(34,197,94,.10), transparent 55%),
+        #070A12;
+      color: rgba(255,255,255,.92);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      border-radius: 1rem;
+    }
+    ::selection {
+      background: rgba(99,102,241,.35);
+    }
+  </style>
+</head>
+<body class="min-h-screen font-sans">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-black/20 backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between py-3">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-white/5 border border-white/10 grid place-items-center">
+          <span class="text-sm font-semibold">EA</span>
+        </div>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold">Elian Al‑Kadar</div>
+          <div class="text-xs text-white/60">Portfolio</div>
+        </div>
+      </div>
+      <nav class="hidden sm:flex items-center gap-5 text-sm text-white/70">
+        <a class="hover:text-white" href="#about">About</a>
+        <a class="hover:text-white" href="#skills">Skills</a>
+        <a class="hover:text-white" href="#experience">Experience</a>
+        <a class="hover:text-white" href="#projects">Projects</a>
+        <a class="hover:text-white" href="#contact">Contact</a>
+      </nav>
+      <a href="#projects" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/85 hover:bg-white/10">
+        View projects
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-5 sm:px-8 pt-10 sm:pt-14 pb-10">
+    <!-- Hero Section -->
+    <section class="glass p-6 sm:p-10">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_.8fr] items-start">
+        <div>
+          <div class="inline-flex items-center gap-2">
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Homs, Syria</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Available for freelance</span>
+          </div>
+          <h1 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight">Graphic Designer • Video Editor • Motion Graphics</h1>
+          <p class="mt-3 text-white/70 leading-relaxed max-w-2xl">
+            Creative Graphic Designer and Video Editor with 5+ years of experience across broadcast, print, and social media. Skilled in Adobe Creative Suite, motion graphics, and project management—delivering high-quality visuals and engaging content.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm font-semibold hover:opacity-90" href="#contact">Contact
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 7v.01M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+            <a class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85 hover:bg-white/10" href="https://elianalkadar.myportfolio.com/" target="_blank" rel="noopener">Portfolio
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h6m0 0v6m0-6L10 16m8-9l-8 8" />
+              </svg>
+            </a>
+            <a class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85 hover:bg-white/10" href="https://www.linkedin.com/in/eliankadar/" target="_blank" rel="noopener">LinkedIn
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452H17.4v-5.569c0-1.328-.028-3.039-1.852-3.039-1.853 0-2.136 1.446-2.136 2.939v5.669h-3.053V9h2.931v1.561h.042c.41-.776 1.416-1.591 2.915-1.591 3.115 0 3.692 2.048 3.692 4.708v6.774zM5.337 7.433c-.985 0-1.776-.796-1.776-1.776 0-.981.791-1.776 1.776-1.776.98 0 1.776.795 1.776 1.776 0 .98-.795 1.776-1.776 1.776zM6.863 20.452H3.814V9h3.049v11.452z"/>
+              </svg>
+            </a>
+          </div>
+          <!-- Key skills preview -->
+          <div class="mt-7 flex flex-wrap gap-2">
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Adobe Photoshop</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Adobe Illustrator</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Premiere Pro</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">After Effects</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Motion Graphics</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Branding</span>
+          </div>
+        </div>
+        <!-- Side highlights -->
+        <div class="grid gap-3">
+          <div class="glass p-5">
+            <div class="text-sm text-white/60">Highlights</div>
+            <ul class="mt-3 space-y-2 text-sm text-white/80">
+              <li>• Broadcast-ready motion & video editing</li>
+              <li>• Social campaigns + brand consistency</li>
+              <li>• Editorial layout + print prepress</li>
+            </ul>
+          </div>
+          <div class="glass p-5">
+            <div class="text-sm text-white/60">Focus</div>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Branding</span>
+              <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Motion</span>
+              <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Social Media</span>
+              <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Editorial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="mt-10">
+      <div class="mb-5">
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight">About</h2>
+        <p class="mt-1 text-white/65 text-sm">A quick story, clear value, and what you’re best at.</p>
+      </div>
+      <div class="glass p-6 sm:p-8 text-white/75 leading-relaxed">
+        <p>
+          I’m Elian Al‑Kadar, a Graphic Designer and Video Editor working across broadcast, print, and social media. I build clean visual systems, produce high-impact motion pieces, and ship content fast without losing quality.
+        </p>
+        <p class="mt-3">
+          I’m also studying Computer Science, which helps me think in systems, improve workflows, and collaborate better with technical teams.
+        </p>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="mt-10">
+      <div class="mb-5">
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight">Skills</h2>
+        <p class="mt-1 text-white/65 text-sm">A compact, scannable skill showcase.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- List each skill card here -->
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Adobe Photoshop</div>
+          <div class="text-xs text-white/55 mt-1">Digital imaging & photo manipulation.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Adobe Illustrator</div>
+          <div class="text-xs text-white/55 mt-1">Vector graphics & icon design.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">InDesign</div>
+          <div class="text-xs text-white/55 mt-1">Editorial layouts & print.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Premiere Pro</div>
+          <div class="text-xs text-white/55 mt-1">Video editing & storytelling.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">After Effects</div>
+          <div class="text-xs text-white/55 mt-1">Motion graphics & animation.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Motion Graphics</div>
+          <div class="text-xs text-white/55 mt-1">Dynamic visual storytelling.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Branding</div>
+          <div class="text-xs text-white/55 mt-1">Identity & logo systems.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Social Media Design</div>
+          <div class="text-xs text-white/55 mt-1">Fast-paced content & campaigns.</div>
+        </div>
+        <div class="glass p-4">
+          <div class="text-sm font-semibold">Print & Prepress</div>
+          <div class="text-xs text-white/55 mt-1">Prepping files for press & digital.</div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="mt-10">
+      <div class="mb-5">
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight">Experience</h2>
+        <p class="mt-1 text-white/65 text-sm">Timeline style — clean and professional.</p>
+      </div>
+      <div class="grid gap-4">
+        <div class="glass p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div>
+              <div class="text-base font-semibold">Graphic Designer & Video Editor</div>
+              <div class="text-sm text-white/70">RT TV News Channel</div>
+            </div>
+            <div class="text-xs text-white/55">Nov 2023 – Present</div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-white/75">
+            <li>• Produced & edited 150+ video segments (Premiere Pro, After Effects).</li>
+            <li>• Designed 200+ digital assets (thumbnails, posters, logos, motion graphics).</li>
+            <li>• Optimized videos for social platforms and improved engagement.</li>
+          </ul>
+        </div>
+        <div class="glass p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div>
+              <div class="text-base font-semibold">Freelance Graphic Designer</div>
+              <div class="text-sm text-white/70">Excel Magazine (Dubai, UAE)</div>
+            </div>
+            <div class="text-xs text-white/55">Jun 2024 – Dec 2024</div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-white/75">
+            <li>• Designed 6+ full magazine issues (50–80 pages each).</li>
+            <li>• Created 100+ marketing & social media graphics.</li>
+            <li>• Oversaw print-ready delivery and pre-press quality.</li>
+          </ul>
+        </div>
+        <div class="glass p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div>
+              <div class="text-base font-semibold">Graphic Design Trainer (Part-time)</div>
+              <div class="text-sm text-white/70">HDISC</div>
+            </div>
+            <div class="text-xs text-white/55">Sep 2021 – Dec 2023</div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-white/75">
+            <li>• Delivered 200+ hours of training (Adobe tools + design principles).</li>
+            <li>• Guided students through real projects and industry workflows.</li>
+          </ul>
+        </div>
+        <div class="glass p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div>
+              <div class="text-base font-semibold">Graphic Designer</div>
+              <div class="text-sm text-white/70">Christian Hope Center</div>
+            </div>
+            <div class="text-xs text-white/55">Apr 2019 – Feb 2022</div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-white/75">
+            <li>• Designed 300+ marketing assets and social media visuals.</li>
+            <li>• Supported filming/editing and campaign creative direction.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="mt-10">
+      <div class="mb-5">
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight">Projects</h2>
+        <p class="mt-1 text-white/65 text-sm">Filterable grid — perfect for Behance / YouTube / Drive links.</p>
+      </div>
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button onclick="filterProjects('all')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white text-black" id="filter-all">All</button>
+        <button onclick="filterProjects('Social')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white/5 text-white/80 hover:bg-white/10" id="filter-Social">Social</button>
+        <button onclick="filterProjects('Editorial')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white/5 text-white/80 hover:bg-white/10" id="filter-Editorial">Editorial</button>
+        <button onclick="filterProjects('Motion')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white/5 text-white/80 hover:bg-white/10" id="filter-Motion">Motion</button>
+        <button onclick="filterProjects('Branding')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white/5 text-white/80 hover:bg-white/10" id="filter-Branding">Branding</button>
+        <button onclick="filterProjects('Web')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white/5 text-white/80 hover:bg-white/10" id="filter-Web">Web</button>
+        <button onclick="filterProjects('Other')" class="px-4 py-2 rounded-xl text-sm border border-white/10 bg-white/5 text-white/80 hover:bg-white/10" id="filter-Other">Other</button>
+      </div>
+      <!-- Projects Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" id="projects-grid">
+        <!-- Project Card 1 -->
+        <article class="glass p-5" data-category="Social">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <div class="text-sm text-white/60">Social</div>
+              <h3 class="mt-1 text-lg font-semibold">Broadcast Social Package</h3>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-white/70 leading-relaxed">
+            A modular template set for fast newsroom publishing: covers, lower-thirds, and reels.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">PS</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">AI</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">AE</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Social</span>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-2 text-sm text-white/80 hover:text-white">Add link
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h6m0 0v6m0-6L10 16m8-9l-8 8" />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <!-- Project Card 2 -->
+        <article class="glass p-5" data-category="Editorial">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <div class="text-sm text-white/60">Editorial</div>
+              <h3 class="mt-1 text-lg font-semibold">Magazine Layout System</h3>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-white/70 leading-relaxed">
+            A clean grid + typography system for multi-issue consistency and faster production.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">InDesign</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Typography</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Prepress</span>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-2 text-sm text-white/80 hover:text-white">Add link
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h6m0 0v6m0-6L10 16m8-9l-8 8" />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <!-- Project Card 3 -->
+        <article class="glass p-5" data-category="Motion">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <div class="text-sm text-white/60">Motion</div>
+              <h3 class="mt-1 text-lg font-semibold">Motion Opener</h3>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-white/70 leading-relaxed">
+            Short animated opener with bold type and smooth transitions for digital segments.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">After Effects</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Motion</span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Sound</span>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-2 text-sm text-white/80 hover:text-white">Add link
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h6m0 0v6m0-6L10 16m8-9l-8 8" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="mt-10 pb-14">
+      <div class="mb-5">
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight">Contact</h2>
+        <p class="mt-1 text-white/65 text-sm">Simple, direct, and conversion-friendly.</p>
+      </div>
+      <div class="glass p-6 sm:p-8">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <div class="text-sm text-white/60">Let’s build something clean.</div>
+            <p class="mt-2 text-sm text-white/75 leading-relaxed">
+              For collaborations, freelance work, or long-term roles—send a message and include a link to the project brief (or just describe what you need).
+            </p>
+
+            <div class="mt-5 space-y-3 text-sm">
+              <a class="flex items-center gap-2 text-white/85 hover:text-white" href="mailto:elian.alkadar@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 12H8m8 0l-4 4m4-4l-4-4" />
+                </svg>
+                elian.alkadar@gmail.com
+              </a>
+              <div class="flex items-center gap-2 text-white/75">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h2a2 2 0 012 2v10a2 2 0 01-2 2H3m16 0h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m-6 0v10" />
+                </svg>
+                +963 951 371 814
+              </div>
+            </div>
+          </div>
+          <form class="grid gap-3" onsubmit="alert('Thank you! This demo form does not send data.'); return false;">
+            <input class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25" placeholder="Your name" />
+            <input class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25" placeholder="Your email" />
+            <textarea class="min-h-[120px] rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25" placeholder="Your message"></textarea>
+            <button class="rounded-xl bg-white text-black px-4 py-3 text-sm font-semibold hover:opacity-90">Send (demo)</button>
+          </form>
+        </div>
+      </div>
+      <footer class="mt-8 text-center text-xs text-white/45">
+        © <span id="currentYear"></span> Elian Al‑Kadar • Built for GitHub Pages
+      </footer>
+    </section>
+  </main>
+  <!-- Scripts -->
+  <script>
+    // Update copyright year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // Filtering projects
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('#projects-grid article');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (category === 'all' || cat === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      // Update button styles
+      document.querySelectorAll('[id^="filter-"]').forEach(btn => {
+        btn.classList.remove('bg-white','text-black');
+        btn.classList.add('bg-white/5','text-white/80');
+      });
+      const activeBtn = document.getElementById('filter-' + (category === 'all' ? 'all' : category));
+      if (activeBtn) {
+        activeBtn.classList.add('bg-white','text-black');
+        activeBtn.classList.remove('bg-white/5','text-white/80');
+      }
+    }
+  </script>
+</body>
+</html>
